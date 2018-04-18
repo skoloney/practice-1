@@ -1,6 +1,9 @@
-
 export default function sumDigits(n) {
-    // Change me!
+    let result = 0;
 
-    return 0;
+    while (n) {
+        result += n % 10;
+        n = Math.trunc(n / 10);
+    }
+    return result;
 }

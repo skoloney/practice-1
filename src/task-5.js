@@ -1,6 +1,11 @@
 
 export default function trim(text, maxLength) {
-    // Change me!
+    if (maxLength <= 0) {
+        throw new RangeError();
+    }
 
-    return "";
+    return text.length > maxLength
+        ? text.slice(0, maxLength - 1).concat("\u2026")
+        : text;
 }
+
