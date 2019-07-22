@@ -4,5 +4,4 @@ export default function isTriangle(a, b, c) {
         return false;
     }
     return true;
-    
 }

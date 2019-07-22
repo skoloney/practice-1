@@ -6,7 +6,6 @@ export default function getNthItem(a, n) {
             if (i >= n) {
                 return S[i];
             }
-
         }
     }
     return 0;

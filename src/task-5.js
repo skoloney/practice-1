@@ -5,5 +5,5 @@ export default function trim(text, maxLength) {
     text = text.substr(0, maxLength - 1);
     text = `${text}\u2026`;
     return text;
-    // замість 5-7 рядку може бути: return = `${text.substr(0, maxLength - 1)}\u2026`;
+    // замість 5-7 рядку може бути: return `${text.substr(0, maxLength - 1)}\u2026`;
 }
