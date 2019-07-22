@@ -1,6 +1,4 @@
 
 export default function unique(data) {
-    // Change me!
-
-    return [];
+    return [...new Set(data)];
 }
